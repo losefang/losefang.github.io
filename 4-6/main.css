@@ -1,0 +1,16 @@
+h1 {
+    font-family: "宋体";
+    font-weight: 200;
+}
+
+p {
+    text-indent: 2em;
+}
+
+#a {
+    color: red;
+}
+
+#b {
+    font-weight: 900;
+}
