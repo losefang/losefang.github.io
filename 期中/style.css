@@ -1,0 +1,553 @@
+* {
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei", STHeiti, MingLiu, sans-serif; }
+
+body {
+  margin: 0;
+  min-width: 980px; }
+
+.separator {
+  flex: 1; }
+
+header {
+  z-index: 9999;
+  background-color: white;
+  position: fixed;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  height: 60px;
+  width: 100%;
+  display: flex; }
+  header .logo {
+    margin-left: 60px;
+    line-height: 60px; }
+    header .logo a {
+      background-image: url("assets/logo.png");
+      background-size: 100% 100%;
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: text-bottom; }
+    header .logo span {
+      font-size: 20px;
+      font-family: "SimHei", sans-serif; }
+  header nav a {
+    text-decoration: none;
+    color: #8e9197;
+    line-height: 60px;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 15px;
+    height: 60px; }
+  header nav .is-active {
+    color: #e74f4d;
+    border-bottom: 3px solid #e74f4d; }
+  header .log-in {
+    font-size: 15px;
+    color: #e74f4d;
+    margin-left: 20px;
+    line-height: 60px;
+    margin-right: 60px; }
+    header .log-in i {
+      vertical-align: text-bottom; }
+
+main .separator-horizontal {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: white; }
+main .welcome {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url("assets/front-pic.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  main .welcome .img-cover {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
+  main .welcome .welcome-text {
+    margin-left: 120px;
+    color: white;
+    z-index: 2;
+    font-size: 90px; }
+    main .welcome .welcome-text h1 {
+      font-family: "helvetica", sans-serif;
+      font-size: 1em;
+      font-weight: 300;
+      margin: 20px 0; }
+    main .welcome .welcome-text h2 {
+      font-weight: 100;
+      margin: 10px 0;
+      font-size: .3em; }
+    main .welcome .welcome-text button {
+      width: 350px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 0.27em; }
+main .button {
+        /*
+      Credit to Material Design Button
+      getmdl.io
+    */
+  border: none;
+  display: inline-block;
+  font-weight: 500;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  background-color: #e74f4d;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+main .characteristics {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex; }
+  main .characteristics .box {
+    width: 25%;
+    text-align: center; }
+  main .characteristics .box:last-child h3 {
+    border-right: 0; }
+  main .characteristics h3 {
+    color: #767777;
+    font-size: 20px;
+    border-right: 2px solid #767777;
+    margin-top: 50px;
+    padding: 0 80px;
+    padding-bottom: 20px;
+    height: 60px;
+    font-weight: 100; }
+  main .characteristics .icon {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px; }
+  main .characteristics #icon1 {
+    background: url("assets/c1.jpg");
+    background-size: 100% 100%; }
+  main .characteristics #icon2 {
+    background: url("assets/c2.jpg");
+    background-size: 100% 100%; }
+  main .characteristics #icon3 {
+    background: url("assets/c3.jpg");
+    background-size: 100% 100%; }
+  main .characteristics #icon4 {
+    background: url("assets/c4.jpg");
+    background-size: 100% 100%; }
+main .banner {
+  padding: 100px 0;
+  background-color: #ededec;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #a1a1a1; }
+  main .banner .logo {
+    background-image: url("assets/logo.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 100px;
+    height: 100px; }
+  main .banner h1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 0; }
+main .activities .search {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-image: url("assets/banner.jpg");
+  background-size: cover; }
+  main .activities .search .cover {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #93493f;
+    opacity: .3; }
+  main .activities .search .wrapper {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: relative; }
+    main .activities .search .wrapper h1 {
+      font-weight: 100;
+      font-size: 30px;
+      margin: 0; }
+    main .activities .search .wrapper h2 {
+      margin: 20px 0;
+      font-weight: 100;
+      font-size: 16px; }
+    main .activities .search .wrapper .search-bar {
+      margin: 60px auto; }
+      main .activities .search .wrapper .search-bar .input-field {
+        display: inline-block;
+        margin: 0 20px;
+        width: 240px;
+        height: 37px;
+        background-color: white;
+        padding: 0 10px;
+        text-align: left; }
+        main .activities .search .wrapper .search-bar .input-field span {
+          color: #acadad;
+          line-height: 37px;
+          font-size: 15px; }
+        main .activities .search .wrapper .search-bar .input-field .drop-down {
+          float: right;
+          background-color: #be4f48;
+          line-height: 21px;
+          margin: 8px 0; }
+      main .activities .search .wrapper .search-bar .search-button {
+        display: initial;
+        text-align: center;
+        text-indent: 20px; }
+        main .activities .search .wrapper .search-bar .search-button span {
+          color: white;
+          font-size: 16px;
+          letter-spacing: 20px; }
+      main .activities .search .wrapper .search-bar button {
+        border: 0; }
+      main .activities .search .wrapper .search-bar .input-field:last-child {
+        background-color: #be4f48; }
+      main .activities .search .wrapper .search-bar .is-chosen {
+        border: 1px solid #be4f48;
+        position: relative; }
+        main .activities .search .wrapper .search-bar .is-chosen .options {
+          border: 1px solid #be4f48;
+          position: absolute;
+          width: 240px;
+          top: 35px;
+          left: -1px;
+          background-color: #e4e3e5;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          padding-bottom: 10px; }
+          main .activities .search .wrapper .search-bar .is-chosen .options .option {
+            height: 30px; }
+            main .activities .search .wrapper .search-bar .is-chosen .options .option i {
+              vertical-align: text-bottom;
+              font-size: 20px;
+              margin-left: 8px;
+              margin-right: 8px;
+              opacity: 0; }
+            main .activities .search .wrapper .search-bar .is-chosen .options .option span {
+              line-height: 30px;
+              color: #787878; }
+          main .activities .search .wrapper .search-bar .is-chosen .options .option:hover {
+            background-color: #be4f48; }
+            main .activities .search .wrapper .search-bar .is-chosen .options .option:hover i {
+              opacity: 1; }
+            main .activities .search .wrapper .search-bar .is-chosen .options .option:hover span {
+              color: white; }
+main .activities .show-case {
+  background-color: #f8f8f7;
+  text-align: center;
+  padding: 100px 0; }
+  main .activities .show-case .activities {
+    margin: 0 auto;
+    display: inline-block; }
+    main .activities .show-case .activities .activity {
+      width: 200px;
+      margin: 0 20px;
+      display: inline-block; }
+      main .activities .show-case .activities .activity h2 {
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: 100; }
+      main .activities .show-case .activities .activity h3 {
+        margin: 10px 0;
+        font-size: 15px;
+        font-weight: 100;
+        color: #acadad; }
+      main .activities .show-case .activities .activity .focus {
+        letter-spacing: 20px;
+        text-indent: 20px;
+        font-size: 25px;
+        font-weight: 400; }
+      main .activities .show-case .activities .activity .img-container {
+        border: 1px solid #e1e1e1;
+        width: 100%;
+        padding: 8px 6px; }
+        main .activities .show-case .activities .activity .img-container img {
+          width: 100%; }
+        main .details-button {
+  padding: 10px 35px;
+  background-color: white;
+  border: 1px solid #be4f48;
+  color: #be4f48;
+  font-size: 17px; }
+main .presentation {
+  position: relative; }
+  main .presentation .advertisement {
+    height: 500px;
+    width: 65%;
+    background-image: url(assets/suits.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+    main .presentation .advertisement .content-wrapper {
+      display: inline-block;
+      color: white; }
+      main .presentation .advertisement .content-wrapper h1 {
+        margin-top: -18px;
+        margin-bottom: 0;
+        font-size: 150px;
+        font-weight: 100;
+        font-family: "helvetica", sans-serif; }
+      main .presentation .advertisement .content-wrapper h2 {
+        margin: 0;
+        font-size: 50px;
+        font-weight: 100; }
+      main .presentation .advertisement .content-wrapper h3 {
+        margin: 0;
+        font-weight: 100;
+        font-size: 23px; }
+      main .presentation .advertisement .content-wrapper h4 {
+        font-weight: 100;
+        font-size: 17px;
+        margin: 0; }
+  main .presentation .details-of-ad {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    text-align: center; }
+    main .presentation .details-of-ad .content-wrapper .triangle {
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-right: 36px solid white;
+      border-bottom: 18px solid transparent;
+      position: absolute;
+      left: -36px;
+      top: 241px; }
+    main .presentation .details-of-ad .content-wrapper p {
+      width: 70%;
+      margin: 50px auto;
+      margin-top: 20px;
+      text-align: left;
+      line-height: 32px;
+      color: #acadad;
+      font-size: 14px; }
+    main .presentation .details-of-ad .content-wrapper h1 {
+      font-size: 30px;
+      font-weight: 100; }
+    main .presentation .details-of-ad .content-wrapper .slash {
+      color: #acadad;
+      font-weight: 100; }
+    main .presentation .details-of-ad .content-wrapper span {
+      color: red; }
+    main .presentation .details-of-ad .content-wrapper .carousels {
+      padding: 0;
+      margin-top: 30px; }
+      main .presentation .details-of-ad .content-wrapper .carousels .carousel {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 1px solid #acadad;
+        margin: 0 8px; }
+      main .presentation .details-of-ad .content-wrapper .carousels .carousel-is-active {
+        background-color: #acadad; }
+main .more-details {
+  height: 500px;
+  display: flex; }
+  main .more-details .subsection {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+    main .more-details .subsection button {
+      padding: 10px 57px;
+      font-size: 24px;
+      margin-top: 25px; }
+    main .more-details .subsection h1 {
+      margin: 15px 0;
+      font-weight: 100;
+      font-size: 26px; }
+  main .more-details #details-subsec1 {
+    background-color: #e74f4d; }
+    main .more-details #details-subsec1 h1 {
+      color: white; }
+    main .more-details #details-subsec1 button {
+      background-color: #e74f4d;
+      border: 1px solid white;
+      color: white; }
+  main .more-details #details-subsec2 {
+    flex: 1; }
+    main .more-details #details-subsec2 span {
+      background-color: #e74f4d; }
+  main .more-details .photo {
+    width: 35%;
+    background-image: url("assets/train.jpg");
+    background-size: cover;
+    position: relative; }
+    main .more-details .photo .cover {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 500px;
+      background-color: rgba(0, 0, 0, 0.4); }
+    main .more-details .photo .triangle {
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-left: 36px solid white;
+      border-bottom: 18px solid transparent;
+      position: absolute;
+      left: 0px;
+      top: 241px; }
+main .join-us .text {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  main .join-us .text .content-wrapper {
+    text-align: center; }
+    main .join-us .text .content-wrapper h1 {
+      margin: 0;
+      font-size: 27px;
+      font-weight: 100; }
+    main .join-us .text .content-wrapper p {
+      width: 40%;
+      display: inline-block;
+      color: #acadad; }
+    main .join-us .text .content-wrapper span {
+      background-color: #be4f48; }
+main .join-us .protocalsAndForm {
+  display: flex;
+  padding: 0 100px;
+  padding-bottom: 200px; }
+  main .join-us .protocalsAndForm .protocals {
+    width: 400px;
+    margin-right: 40px; }
+    main .join-us .protocalsAndForm .protocals article h1 {
+      font-size: 19px;
+      margin: 10px 0; }
+    main .join-us .protocalsAndForm .protocals article p {
+      color: #acadad;
+      line-height: 26px; }
+    main .join-us .protocalsAndForm .protocals article .show-more {
+      text-align: right;
+      line-height: 30px;
+      color: #acadad; }
+      main .join-us .protocalsAndForm .protocals article .show-more i {
+        vertical-align: -7px; }
+      main .join-us .protocalsAndForm .protocals article .show-more span {
+        line-height: 30px; }
+  main .join-us .protocalsAndForm .form {
+    flex: 1; }
+    main .join-us .protocalsAndForm .form .small-input {
+      height: 40px;
+      margin-bottom: 20px;
+      display: flex; }
+      main .join-us .protocalsAndForm .form .small-input input {
+        width: 50%;
+        margin-right: 20px;
+        background-color: #ededef;
+        border: 0;
+        display: inline-block;
+        font-size: 14px;
+        padding-left: 10px; }
+      main .join-us .protocalsAndForm .form .small-input input:last-child {
+        margin-right: 0; }
+    main .join-us .protocalsAndForm .form div:last-of-type {
+      margin-bottom: 0; }
+    main .join-us .protocalsAndForm .form .large-input {
+      width: 100%; }
+      main .join-us .protocalsAndForm .form .large-input textarea {
+        width: 100%;
+        height: 200px;
+        background-color: #ededef;
+        border: 0;
+        resize: none;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 14px; }
+    main .join-us .protocalsAndForm .form #submit-button {
+      width: 100%;
+      padding: 10px 0;
+      border: 0;
+      background-color: #ededef;
+      margin-top: 18px;
+      font-size: 16px;
+      color: #787878; }
+
+footer {
+  background-color: #32353e;
+  padding: 130px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  footer .content-wrapper {
+    text-align: center; }
+    footer .content-wrapper h1 {
+      margin: 10px 0;
+      font-size: 28px;
+      color: white;
+      font-weight: 100; }
+    footer .content-wrapper p {
+      margin: 0;
+      color: white; }
+    footer .content-wrapper .email-address {
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      footer .content-wrapper .email-address #email-add {
+        background-color: white;
+        width: 550px;
+        padding: 5px 5px;
+        height: 45px;
+        line-height: 45px;
+        border: 0; }
+      footer .content-wrapper .email-address .submit-button {
+        position: relative;
+        left: -3px;
+        top: 1px;
+        height: 45px;
+        line-height: 45px;
+        border: 0;
+        padding: 0 20px;
+        background-color: #707278;
+        letter-spacing: 10px;
+        text-indent: 10px;
+        color: white;
+        font-size: 17px; }
+    footer .content-wrapper .social-media {
+      text-align: center; }
+      footer .content-wrapper .social-media i {
+        color: white;
+        font-size: 32px;
+        margin: 0 15px; }
+  footer .footer-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: #2f2f38; }
+    footer .footer-bar .separator {
+      flex: 1; }
+
+/*# sourceMappingURL=style.css.map */
