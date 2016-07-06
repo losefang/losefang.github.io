@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>jQuery选择符练习</title>
+    <meta charset='utf-8'>
+    <script src="jquery-1.12.4.min.js"></script>
+    <style>
+    .title {
+        font-size: 20px;
+    }
+    
+    .info {
+        background-color: #ccc;
+    }
+    
+    .warning {
+        background-color: yellow;
+        color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <h1><strong>  时光旅行  </strong></h1>
+    <h1 class="title">时光</h1>
+    <p>卷一　诗的成因 卷二　长路/p>
+    <p>卷三　悬崖菊 卷四　雾起时</p>
+    <p>卷五　时光的复仇 卷六　良夜</p>
+    <p>卷七　子夜变歌 卷八　在黑暗的河流上</p>
+    <p>卷九　夏夜的传说 后记　愿望</p>
+    
+    <script>
+    $(document).ready(
+        function() {
+            $("h1").css('color', "green");
+            $('.title').addClass('title');
+            $('p:contains("广告")').addClass('info');
+            $('p:eq(2)').addClass('warning');
+        }
+
+    );
+    </script>
+</body>
+
+</html>
